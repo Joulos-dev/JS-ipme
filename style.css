@@ -1,6 +1,44 @@
+body {
+    margin: auto;
+    max-width: 1000px;
+}
+
 .ennemi {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+button {
+    background-color: rgb(30, 122, 221);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input {
+    margin: 20px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+li {
+    border: solid 1px black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    list-style-type: none;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.checked {
+    background-color: rgb(30, 122, 221);
+    text-decoration: line-through;
 }

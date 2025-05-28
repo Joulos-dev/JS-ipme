@@ -31,6 +31,3 @@ chatImg.addEventListener("click", () => {
         }, 100);
     }
 });
-
-// element.classList (accéder a toute les classes d'un élement)
-// input.value (récuperer la valeur d'un input en str )
