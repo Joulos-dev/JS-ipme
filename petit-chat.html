@@ -3,15 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="./script.js" defer></script>
+        <script src="./script-chat.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
         <title>Petit chat WAR</title>
     </head>
     <body>
         <h1>Petit chat WAR</h1>
-        <div class="forceUtilisateur">Force de l'utilisateur : 10</div>
-        <div class="catLife">Vie du chat: 100</div>
         <div>
-            <img src="chaton.png" alt="chaton" />
+            Force de l'utilisateur : <span class="forceUtilisateur">10</span>
+        </div>
+        <div class="ennemi">
+            <div>Vie du chat: <span class="catLife">100</span></div>
+            <div>
+                <img class="chat" src="assets/chaton.png" alt="chaton" />
+            </div>
         </div>
     </body>
 </html>

@@ -108,19 +108,3 @@ for (i = 0; i < paragraphs.length; i++) {
         p.remove();
     }
 }
-
-// enoncé exo petit chat //
-
-//je récupere la div et je lui ajoute un evenement au click
-// let div = document.querySelector('.test');
-// div.addEventListener('click', () => {
-//     console.log('ici');
-// });
-
-//je recupere le lien et je lui change son attribut, je peux lui changer tout ces attributs
-// exemple changer un src dans une image !!
-// let lien = document.querySelector('#lien');
-// lien.href = "https://facebook.fr";
-
-let forceUtilisateur = 10;
-let catLife = 100;
