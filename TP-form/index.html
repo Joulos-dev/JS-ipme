@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>Formulaire Profil</h1>
+        <form id="super-form">
+            <div class="line">
+                <div class="prenom">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" placeholder="prénom" />
+                </div>
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" placeholder="nom" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="age">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" placeholder="Age" />
+                </div>
+                <div class="sexe">
+                    <label for="radio">Sexe</label>
+                    <div class="sexe-inside">
+                        <input
+                            type="radio"
+                            id="homme"
+                            name="sexe"
+                            value="homme"
+                        />
+                        <label for="homme">Homme</label>
+                        <input
+                            type="radio"
+                            id="femme"
+                            name="sexe"
+                            value="phone"
+                        />
+                        <label for="femme">Femme</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="profession">
+                    <label for="profession">Profession</label>
+                    <select id="profession" name="profession">
+                        <option value="developpeur">Développeur</option>
+                        <option value="maitre-kebabier">Maitre Kebabier</option>
+                        <option value="astronaute">Astronaute</option>
+                        <option value="joueur-de-trombone">
+                            Joueur de Trombone
+                        </option>
+                        <option value="maitre-jedi">Maitre Jedi</option>
+                    </select>
+                </div>
+                <div class="region">
+                    <label for="region">Region</label>
+                    <select id="region" name="region">
+                        <option value="auvergne">Auvergne</option>
+                        <option value="paris">Paris</option>
+                        <option value="tattoine">Tattoïne</option>
+                        <option value="azeroth">Azeroth</option>
+                        <option value="port-royat">Port-Royal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="checkbox-label">
+                <label for="checkbox">Hobbies</label>
+            </div>
+
+            <div class="checkbox">
+                <div class="checkbox-inside">
+                    <input
+                        type="checkbox"
+                        id="lecture"
+                        name="hobbies"
+                        value="lecture"
+                    />
+                    <label for="lecture">Lecture</label>
+                </div>
+                <div class="checkbox-inside">
+                    <input
+                        type="checkbox"
+                        id="sport"
+                        name="hobbies"
+                        value="sport"
+                    />
+                    <label for="sport">Sport</label>
+                </div>
+                <div class="checkbox-inside">
+                    <input
+                        type="checkbox"
+                        id="jeux-video"
+                        name="hobbies"
+                        value="jeux-video"
+                    />
+                    <label for="jeux-video">Jeux-video</label>
+                </div>
+                <div class="checkbox-inside">
+                    <input
+                        type="checkbox"
+                        id="musique"
+                        name="hobbies"
+                        value="musique"
+                    />
+                    <label for="musique">Musique</label>
+                </div>
+                <div class="checkbox-inside">
+                    <input
+                        type="checkbox"
+                        id="voyage"
+                        name="hobbies"
+                        value="voyage"
+                    />
+                    <label for="voyage">Voyage</label>
+                </div>
+            </div>
+            <div class="line">
+                <div>
+                    <label for="lien-linked-in">Lien Linked-in</label>
+                    <input
+                        type="text"
+                        name="lien-linked-in"
+                        id="lien-linked-in"
+                        placeholder="Lien Linked-in"
+                    />
+                </div>
+            </div>
+            <div class="button-submit">
+                <button type="submit" id="submit">Soumettre</button>
+            </div>
+        </form>
+        <div class="card">
+            <h2>Daenerys mère des dragons , briseuse de chaines ...</h2>
+            <p>Age:</p>
+            <p>Sexe:</p>
+            <p>Profession:</p>
+            <p>Région:</p>
+            <p>Hobbies:</p>
+            <p>Linked-in:</p>
+        </div>
+    </body>
+</html>
