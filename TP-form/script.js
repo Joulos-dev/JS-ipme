@@ -10,21 +10,13 @@ const hobbies = form.hobbies;
 const lien = document.querySelector("#lien-linked-in");
 
 const cardPrenom = document.querySelector(".cardPrenom");
-console.log(cardPrenom);
 const cardNom = document.querySelector(".cardNom");
-console.log(cardNom);
 const cardAge = document.querySelector(".cardAge");
-console.log(cardAge);
 const cardSexe = document.querySelector(".cardSexe");
-console.log(cardSexe);
 const cardProfession = document.querySelector(".cardProfession");
-console.log(cardProfession);
 const cardRegion = document.querySelector(".cardRegion");
-console.log(cardRegion);
 const cardHobbies = document.querySelector(".cardHobbies");
-console.log(cardHobbies);
 const cardLien = document.querySelector(".cardLien");
-console.log(cardLien);
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
