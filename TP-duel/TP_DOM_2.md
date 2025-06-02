@@ -1,4 +1,4 @@
-# 🧙‍♂️ TP DOM – Duel de Sorciers : Que le meilleur gagne !
+.# 🧙‍♂️ TP DOM – Duel de Sorciers : Que le meilleur gagne !
 
 ## Objectif
 
@@ -19,11 +19,11 @@ Un message annonce alors le **vainqueur**.
 
 Le formulaire contiendra :
 
-- 🔤 **Nom du sorcier 1** (champ texte)
-- 🏠 **Maison du sorcier 1** (liste déroulante)
+-   🔤 **Nom du sorcier 1** (champ texte)
+-   🏠 **Maison du sorcier 1** (liste déroulante)
 
-- 🔤 **Nom du sorcier 2** (champ texte)
-- 🏠 **Maison du sorcier 2** (liste déroulante)
+-   🔤 **Nom du sorcier 2** (champ texte)
+-   🏠 **Maison du sorcier 2** (liste déroulante)
 
 Bouton : `Lancer le duel`
 
@@ -33,10 +33,10 @@ Bouton : `Lancer le duel`
 
 Après soumission du formulaire :
 
-- Une **carte de duel** apparaît avec :
-    - Les deux sorciers et leur maison
-    - Leurs **PV actuels** (mis à jour à chaque tour)
-    - Un encadré ou un texte d’**historique du combat** (ex : `Tour 1 : Harry attaque Drago pour 12 dégâts. Il reste 188 PV à Drago.`)
+-   Une **carte de duel** apparaît avec :
+    -   Les deux sorciers et leur maison
+    -   Leurs **PV actuels** (mis à jour à chaque tour)
+    -   Un encadré ou un texte d’**historique du combat** (ex : `Tour 1 : Harry attaque Drago pour 12 dégâts. Il reste 188 PV à Drago.`)
 
 Quand le duel est terminé, on affiche un message du type :
 
@@ -46,16 +46,17 @@ Quand le duel est terminé, on affiche un message du type :
 
 ## 3. Contraintes techniques
 
-- Utilise `document.querySelector` ou `document.querySelectorAll` pour manipuler le DOM.
-- Utilise `createElement`, `append`, `innerHTML` ou `insertAdjacentHTML` pour générer dynamiquement les éléments HTML.
-- Ne fais **aucun rechargement de page**.
-- Utilise un fichier HTML et un fichier JavaScript **séparé**.
+-   Utilise `document.querySelector` ou `document.querySelectorAll` pour manipuler le DOM.
+-   Utilise `createElement`, `append`, `innerHTML` ou `insertAdjacentHTML` pour générer dynamiquement les éléments HTML.
+-   Ne fais **aucun rechargement de page**.
+-   Utilise un fichier HTML et un fichier JavaScript **séparé**.
+
 ---
 
 ## 4. Conseils
 
-- Tu vas avoir besoin de `event.preventDefault()` pour stopper la soumission automatique du formulaire.
-- Voici une démarche conseillée pour avancer :
+-   Tu vas avoir besoin de `event.preventDefault()` pour stopper la soumission automatique du formulaire.
+-   Voici une démarche conseillée pour avancer :
 
 1. Fais un `console.log()` pour vérifier que tu rentres bien dans ta fonction quand le formulaire est soumis.
 2. Récupère chaque donnée du formulaire (nom, maison...) et affiche-les avec `console.log()`.
@@ -67,9 +68,10 @@ Quand le duel est terminé, on affiche un message du type :
 
 ## 5. Bonus (facultatifs)
 
-- Affiche une **barre de vie** visuelle pour chaque sorcier.
-- Affiche l’emblème de la maison selon la maison choisie.
-- 
+-   Affiche une **barre de vie** visuelle pour chaque sorcier.
+-   Affiche l’emblème de la maison selon la maison choisie.
+-
+
 ---
 
 ## 6. Exemple de rendu HTML
@@ -83,6 +85,7 @@ Tour 3 : Hermione attaque Drago pour 14 dégâts. Il reste 173 PV à Drago.
 ```
 
 ## 7. À toi de jouer !
+
 ```text
    Travaille proprement avec un fichier index.html et un fichier script.js.
    Utilise des fonctions pour organiser ton code.

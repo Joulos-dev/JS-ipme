@@ -9,7 +9,63 @@
     </head>
     <body>
         <form id="super-form">
-            <h1>🧙‍♂️ Duel De Sorciers</h1>
+            <h1>🧙‍♂️ Duel de Sorciers</h1>
+            <div class="grid">
+                <div class="columns">
+                    <div>
+                        <label for="nom-un">Nom du Sorcier 1</label>
+                        <input type="text" id="nom-un" />
+                    </div>
+                    <div>
+                        <label for="maison-un">Maison du Sorcier 1</label>
+                        <select id="maison-un" name="maison-un">
+                            <option value="gryffondor">Gryffondor</option>
+                            <option value="serpentard">Serpentard</option>
+                            <option value="serdaigle">Serdaigle</option>
+                            <option value="poufsouffle">Poufsouffle</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div>
+                        <label for="nom-deux">Nom du Sorcier 2</label>
+                        <input type="text" id="nom-deux" />
+                    </div>
+                    <div>
+                        <label for="maison-deux">Maison du Sorcier 2</label>
+                        <select id="maison-deux" name="maison-deux">
+                            <option value="gryffondor">Gryffondor</option>
+                            <option value="serpentard">Serpentard</option>
+                            <option value="serdaigle">Serdaigle</option>
+                            <option value="poufsouffle">Poufsouffle</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit" id="submit">Lancez le duel</button>
+            </div>
         </form>
+        <div class="grid-bottom">
+            <div class="duelliste">
+                <h2 class="nom-duelliste-un">Duelliste 1</h2>
+                <p class="maison-duelliste-un">Maison du duelliste 1</p>
+                <progress value="200" max="200"></progress>
+            </div>
+            <div class="vs">
+                <h2>VS</h2>
+            </div>
+            <div class="duelliste">
+                <h2 class="nom-duelliste-deux">Duelliste 2</h2>
+                <p class="maison-duelliste-deux">Maison du duelliste 2</p>
+                <progress value="200" max="200"></progress>
+            </div>
+        </div>
+        <div class="historique">
+            <h2>Historique du duel</h2>
+            <ul>
+                <li>Les sorciers méditent avant le début du duel...</li>
+            </ul>
+        </div>
     </body>
 </html>
