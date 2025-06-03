@@ -66,21 +66,29 @@ button {
     text-align: center;
 }
 
-progress {
-    padding: 10px 20px;
-    width: 80%;
-    background-color: red;
-    border-radius: 25px;
-    color: white;
-}
-
 .historique {
     background-color: rgb(193, 193, 117);
     border-radius: 10px;
-    height: 50vh;
+    height: auto;
 }
 
 li {
-    list-style-type: none;
     margin: 0;
+    padding: 5px;
+}
+
+.nom-duelliste-un {
+    color: brown;
+}
+
+.li-one {
+    color: brown;
+}
+
+.nom-duelliste-deux {
+    color: blue;
+}
+
+.li-two {
+    color: blue;
 }

@@ -19,10 +19,22 @@
                     <div>
                         <label for="maison-un">Maison du Sorcier 1</label>
                         <select id="maison-un" name="maison-un">
-                            <option value="gryffondor">Gryffondor</option>
-                            <option value="serpentard">Serpentard</option>
-                            <option value="serdaigle">Serdaigle</option>
-                            <option value="poufsouffle">Poufsouffle</option>
+                            <option value="gryffondor">
+                                Gryffondor (+3 dégats)
+                            </option>
+                            <option value="serpentard">
+                                Serpentard (25% esquive)
+                            </option>
+                            <option value="serdaigle">
+                                Serdaigle (10% fireball : 40 de dégats)
+                            </option>
+                            <option value="poufsouffle">
+                                Poufsouffle (+100 pv)
+                            </option>
+                            <option value="ordre-du-phoenix">
+                                Ordre du Phoenix (+500pv / 15% +100 pv / +5
+                                dégats)
+                            </option>
                         </select>
                     </div>
                 </div>
@@ -34,10 +46,22 @@
                     <div>
                         <label for="maison-deux">Maison du Sorcier 2</label>
                         <select id="maison-deux" name="maison-deux">
-                            <option value="gryffondor">Gryffondor</option>
-                            <option value="serpentard">Serpentard</option>
-                            <option value="serdaigle">Serdaigle</option>
-                            <option value="poufsouffle">Poufsouffle</option>
+                            <option value="gryffondor">
+                                Gryffondor (+3 dégats)
+                            </option>
+                            <option value="serpentard">
+                                Serpentard (25% esquive)
+                            </option>
+                            <option value="serdaigle">
+                                Serdaigle (10% fireball : 40 de dégats)
+                            </option>
+                            <option value="poufsouffle">
+                                Poufsouffle (+100 pv)
+                            </option>
+                            <option value="mange-mort">
+                                Mange-mort (+250 pv / 10% : 250 de dégats / 25%
+                                esquive)
+                            </option>
                         </select>
                     </div>
                 </div>
@@ -50,7 +74,7 @@
             <div class="duelliste">
                 <h2 class="nom-duelliste-un">Duelliste 1</h2>
                 <p class="maison-duelliste-un">Maison du duelliste 1</p>
-                <progress value="200" max="200"></progress>
+                <progress value="700" max="800" id="progressOne"></progress>
             </div>
             <div class="vs">
                 <h2>VS</h2>
@@ -58,14 +82,14 @@
             <div class="duelliste">
                 <h2 class="nom-duelliste-deux">Duelliste 2</h2>
                 <p class="maison-duelliste-deux">Maison du duelliste 2</p>
-                <progress value="200" max="200"></progress>
+                <progress value="700" max="1000" id="progressTwo"></progress>
             </div>
         </div>
         <div class="historique">
             <h2>Historique du duel</h2>
-            <ul>
+            <ol>
                 <li>Les sorciers méditent avant le début du duel...</li>
-            </ul>
+            </ol>
         </div>
     </body>
 </html>
