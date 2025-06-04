@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Carte mystère - Cree ta collection de Cartes Mystères 🃏✨</h1>
+        <form>
+            <div>
+                <input type="text" id="nom" placeholder="Nom de la carte" />
+            </div>
+            <div>
+                <select name="type" id="type" placeholder="Type">
+                    <option disabled selected>--Type--</option>
+                    <option value="feu 🔥">Feu 🔥</option>
+                    <option value="eau 💧">Eau 💧</option>
+                    <option value="terre 🌱">Terre 🌱</option>
+                    <option value="air 🌪️">Air 🌪️</option>
+                    <option value="magie ✨">Magie ✨</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" id="pouvoir" placeholder="Pouvoir" />
+            </div>
+            <button type="submit" id="submit">Ajouter</button>
+            <button type="button" id="delete">x</button>
+        </form>
+
+        <div class="container">
+            <div class="card">
+                <h2><span>type</span>name</h2>
+                <p>pouvoir : <span></span></p>
+            </div>
+        </div>
+    </body>
+</html>

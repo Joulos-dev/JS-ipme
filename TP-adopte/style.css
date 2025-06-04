@@ -17,6 +17,7 @@ body {
     border-radius: 10px;
 }
 
+/* quand moi (.card) je suis le premier enfant */
 .card:first-child {
     display: none;
 }
