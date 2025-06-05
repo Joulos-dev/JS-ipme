@@ -6,10 +6,10 @@ let pouvoirInput = document.querySelector("#pouvoir");
 
 const buttonDelete = document.querySelector("#delete");
 const container = document.querySelector(".container");
+let recupDecoded = [];
 
 displayAllCard();
 
-let recupDecoded = [];
 let recup = localStorage.getItem("CARTES");
 if (recup !== null) {
     recupDecoded = JSON.parse(recup);
