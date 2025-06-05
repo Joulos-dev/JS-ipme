@@ -1,4 +1,3 @@
-// let card = document.querySelector(".replique");
 let replique = document.querySelector(".replique");
 let nouvelleReplique = document.querySelector("#nouvelle-replique");
 let deleteButton = document.querySelector("#delete");
@@ -18,7 +17,7 @@ nouvelleReplique.addEventListener("click", () => {
             return response.json().then((data) => {
                 replique.innerHTML = "";
                 console.log(data);
-                // création de la réplique principale (jaune)
+                // création de la réplique(card) principale (jaune)
                 let para = document.createElement("p");
                 let character = document.createElement("h2");
                 character.textContent = data.characts;
