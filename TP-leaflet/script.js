@@ -19,12 +19,19 @@ form.addEventListener("submit", (event) => {
             "&format=json"
     ).then((response) => {
         return response.json().then((data) => {
-            let latitude = data[0].lat;
-            console.log(latitude);
-            let longitude = data[0].lon;
             console.log(data);
 
-            const marker = L.marker([latitude, longitude]).addTo(map);
+            if (data.length < 2) {
+                Swal.fire({
+                    title: "Erreur",
+                    text: "Ce lieu semble ne pas exister",
+                    icon: "question",
+                });
+            } else {
+                let latitude = data[0].lat;
+                let longitude = data[0].lon;
+                const marker = L.marker([latitude, longitude]).addTo(map);
+            }
         });
     });
 });
