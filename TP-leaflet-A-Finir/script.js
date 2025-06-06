@@ -10,6 +10,8 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
+getStorage();
+
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     let valueInput = destination.value;
@@ -21,7 +23,7 @@ form.addEventListener("submit", (event) => {
         return response.json().then((data) => {
             console.log(data);
 
-            if (data.length < 2) {
+            if (data.length === 0) {
                 Swal.fire({
                     title: "Erreur",
                     text: "Ce lieu semble ne pas exister",
@@ -31,7 +33,33 @@ form.addEventListener("submit", (event) => {
                 let latitude = data[0].lat;
                 let longitude = data[0].lon;
                 const marker = L.marker([latitude, longitude]).addTo(map);
+
+                setStorage(latitude, longitude);
+                console.log(setStorage);
             }
         });
     });
 });
+
+function getStorage() {
+    const storage = localStorage.getItem("coordonnes");
+
+    if (storage) {
+        return JSON.parse(storage);
+    }
+
+    return [];
+}
+
+function setStorage(lat, lon) {
+    recupStorage = [];
+    recupStorage.push(lat, lon);
+    let arrayJson = JSON.stringify(recupStorage);
+    localStorage.setItem("REPLIQUES", arrayJson);
+    console.log(arrayJson);
+}
+
+function displayHistorique() {
+    const markerList = getStorage();
+    console.log(markerList);
+}
