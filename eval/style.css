@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.list-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+li {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.titre-card {
+    font-weight: none;
+}
+
+.top-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.buttonDelete {
+    border: solid 1px black;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.author {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.titre-card {
+    font-weight: lighter;
+}
